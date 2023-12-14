@@ -15,7 +15,7 @@ let collection = [
     },
 
     {
-        name: "viking",
+        name: "Viking",
         director: "Keith Thompson",
         releaseYear: 2013,
         picture: "images/viking.jpg",
@@ -30,7 +30,7 @@ let collection = [
     },
 
     {
-        name: "breaking bad",
+        name: "Breaking bad",
         director: "Mark Johnson",
         releaseYear: 2008,
         picture: "images/breakingBad.jpg",
@@ -45,7 +45,7 @@ let collection = [
     },
 
     {
-        name: "the walking dead",
+        name: "The walking dead",
         director: "Frank Darabont",
         releaseYear: 2010,
         picture: "images/TheWalkingDead.jpg",
@@ -60,7 +60,7 @@ let collection = [
     },
 
     {
-        name: "game of thrones",
+        name: "Game of thrones",
         director: "Mark Huffam",
         releaseYear: 2011,
         picture: "images/GameOfThrones.jpg",
@@ -75,10 +75,10 @@ let collection = [
     },
 
     {
-        name: "band of brothers",
+        name: "Band of brothers",
         director: "Steven Spielberg",
         releaseYear: 2001,
-        picture: "BandOfBrothers.jpg",
+        picture: "images/BandOfBrothers.jpg",
         genre: ["drame ", "guerre "],
         cast: [
             "Damian Lewis",
@@ -90,7 +90,7 @@ let collection = [
     },
 
     {
-        name: "the 100",
+        name: "The 100",
         director: "Tim Scanlan",
         releaseYear: 2014,
         picture: "images/The100.jpg",
@@ -105,7 +105,7 @@ let collection = [
     },
 
     {
-        name: "kaamelott",
+        name: "Kaamelott",
         director: "Alexandre Astier ",
         releaseYear: 2005,
         picture: "images/Kaamelott.jpg",
@@ -135,7 +135,7 @@ let collection = [
     },
 
     {
-        name: "south park",
+        name: "South park",
         director: "Trey Parker",
         releaseYear: 1997,
         picture: "images/SouthPark.jpg",
@@ -239,9 +239,6 @@ for (i = 0; i < collection.length; i++) {
     })
 };
 /* fin MAIN */
-
-
-
 
 
 
