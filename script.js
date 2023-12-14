@@ -151,6 +151,16 @@ let collection = [
 
 ];
 
+document.addEventListener('DOMContentLoaded', function () {
+
+let headerFond = document.querySelector('header');
+headerFond.style.backgroundImage = "url('images/fondHead.jpg')";
+headerFond.style.backgroundRepear ="no-repeat";
+headerFond.style.backgroundPosition ="center";
+
+
+});
+
 /* début HEADER */
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -159,23 +169,20 @@ document.addEventListener('DOMContentLoaded', function () {
     let imageHeader = document.createElement('img');
 
     let titreH1 = document.createElement('h1');
-    titreH1.innerText = "Dam D collection";
-
-    let PHeader = document.createElement('p');
-    PHeader.innerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+    titreH1.innerText = "Dams stream";
 
     let divHeader = document.createElement('div');
 
     let articleHeader = document.createElement('article');
 
-    imageHeader.src = 'images/rondbleu.png';
+    imageHeader.src = 'images/logo.png';
     imageHeader.classList.add('imgClassHeader');
 
     header.appendChild(divHeader);
     divHeader.appendChild(imageHeader);
-    header.appendChild(articleHeader);
+    divHeader.appendChild(articleHeader);
     articleHeader.appendChild(titreH1);
-    articleHeader.appendChild(PHeader);
+    
 
 });
 /* fin HEADER */
@@ -187,6 +194,8 @@ for (i = 0; i < collection.length; i++) {
     let stockCollection = collection[i];
 
     document.addEventListener('DOMContentLoaded', function () {
+
+        
 
         let imageMain = document.createElement('img');
         imageMain.src = stockCollection.picture;
@@ -230,6 +239,10 @@ for (i = 0; i < collection.length; i++) {
     })
 };
 /* fin MAIN */
+
+
+
+
 
 
 

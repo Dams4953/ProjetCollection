@@ -1,14 +1,54 @@
 @import 'reset';
+@font-face {
+    font-family: 'Benguiat Bold';
+    src: url('Benguiat Bold.ttf');
+}
+@font-face {
+    font-family: 'xmasxpress';
+    src: url('xmasxpress.ttf');
+}
 
-$textColor: rgb(214, 214, 214);
-$blocColor: rgb(117, 50, 50);
-$backgroundColor1: rgb(24, 24, 24);
+
+$textColor: #66362C;
+$blocColor: #E5D9C1;
+$backgroundColor1: #ecdbc5;
 $backgroundColor2: rgb(73, 73, 73);
+$H1Color: #B6956A;
 
 
 body {
     width: 100%;
-    background: radial-gradient(circle,  $backgroundColor1, $backgroundColor2);
+  
+
+    header {
+        width: 100%;
+
+        div{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-align: center;
+            
+            h1 {
+                font-size: 110px;
+                width: 100%;
+                font-family: 'Benguiat Bold';
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+                color: $H1Color;
+                text-shadow: 
+                -1px -1px 0 #000,  
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000; 
+            }
+            
+            img {
+                display: flex;
+            }
+        }
+    }
+    
 
     main {
 
@@ -17,32 +57,51 @@ body {
         justify-content: center;
         width: 100%;
         gap: 3%;
+        background-color: $backgroundColor1;
+        padding-top: 5%;
+        border-top: 5px solid #774d44;
 
     }
     
     section {
         width: 300px;
-        margin-bottom: 2%;
+        margin-bottom: 3%;
         background-color:  $blocColor;
-        border-radius: 15%;
+        border-radius: 6%;
+        opacity: 80%;
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+        border: 2mm inset #8a564b;
+        transition: box-shadow 0.2s, transform 0.2s;
+
+            &:hover{
+
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                transform: scale(1.05);
+            }
+        }
         
     
     
         .MainSection_Img {
             width: 300px;
-            height: 400px;
-            border-top-right-radius: 15%;
-            border-top-left-radius: 15%;
+            height: 300px;
+            border-radius: 4% 4% 0% 0%;
+           
+            
+            
         }
 
         article {
             margin: 5%;
-
+            
             .MainSectionDiv_H2 {
                 font-size: 30px;
                 text-align: center;
                 padding-bottom: 10px;
                 color: $textColor;
+                border-bottom: 3px solid;
+                font-family: 'xmasxpress';
+
             }
 
             p {
@@ -52,9 +111,7 @@ body {
                 color: $textColor;
             }
         }
-    }
-    
-    
-}
+    } 
+
 
 
